@@ -1,0 +1,21 @@
+package br.com.fiap.contas.modelo;
+
+public class Conta {
+	protected double saldo;
+	public String titular;
+	public int numero;
+	public String agencia;
+
+	public void deposita(double valor) {
+		this.saldo += valor;
+	}
+
+	public void saca(double valor) {
+		this.saldo -= valor;
+	}
+
+	public String getTipo() {
+		return "Conta";
+	}
+
+}

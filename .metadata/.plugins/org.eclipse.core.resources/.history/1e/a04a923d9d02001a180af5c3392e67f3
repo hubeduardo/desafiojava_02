@@ -1,0 +1,18 @@
+package conta;
+
+public class Conta {
+	public double saldo;
+	public String titular;
+	public int numero;
+	public String agencia;
+	
+	public void deposita(double valor)
+	{
+		this.saldo += valor;
+	}
+	
+	public void saca(double valor)
+	{
+		this.saldo -= valor;
+	}
+}

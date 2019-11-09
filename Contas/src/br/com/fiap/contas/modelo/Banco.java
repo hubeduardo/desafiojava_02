@@ -1,0 +1,58 @@
+package br.com.fiap.contas.modelo;
+
+public class Banco {
+	private String nome;
+	private int numero;
+	private Conta[] contas;
+
+	public Banco(String nome, int numero) {
+		this.nome = nome;
+		this.numero = numero;
+		this.contas = new ContaCorrente[10];
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public Conta[] getContas() {
+		return contas;
+	}
+
+	public void setContas(Conta[] contas) {
+		this.contas = contas;
+	}
+
+	public void adiciona(Conta c) {
+		for (int i = 0; i < this.contas.length; i++) {
+			if (this.contas[i] == null) {
+				this.contas[i] = c;
+			} else {
+				System.out.println(this.contas[i].toString());
+			}
+		}
+	}
+
+	public void mostraContas() {
+		for (int i = 0; i < this.contas.length; i++) {
+			if (this.contas[i] != null) {
+				System.out.println("Titular da Conta " + this.contas[i].titular);
+			}
+		}
+
+		// preencher para mostrar outras informacoes da conta
+	}
+
+}

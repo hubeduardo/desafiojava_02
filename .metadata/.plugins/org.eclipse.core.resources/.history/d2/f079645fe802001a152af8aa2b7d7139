@@ -1,0 +1,14 @@
+package br.com.fiap.contas.main;
+
+import java.util.List;
+
+import br.com.fiap.contas.modelo.Conta;
+
+public class TestaLista {
+	public static void main(String[] args) {
+		for (int i = 0; i < 5; i++) {
+			List<Conta> conta = new List<Conta>();
+			
+		}
+	}
+}
